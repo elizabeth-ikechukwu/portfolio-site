@@ -200,6 +200,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
 .section.dark .text-link{color:var(--coral);text-decoration-color:rgba(255,122,89,.5)}
 .section.dark .text-link:hover{text-decoration-color:var(--coral)}
 .chooser a:hover strong{color:var(--coral)}
+.proj{border-top:1px solid var(--rule);padding:2.6rem 0 0;margin-top:2.6rem}
+.proj:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.proj h3{font-size:clamp(1.5rem,1.1rem + 1.1vw,2.05rem);line-height:1.15;letter-spacing:-.01em;max-width:20em}
+.proj > p{max-width:42em;font-size:1.0625rem;line-height:1.62;margin-top:1rem}
+.proj .meta{margin-top:.5rem}
+.proj .links{margin-top:1.6rem}
+.proj .shot-real{max-width:52em;margin:1.8rem 0}
+.section-head .meta{margin-top:.8rem;max-width:40em}
 </style>
 <noscript><style>.site-nav{display:block}.menu-btn{display:none}.site-nav .nav-actions{display:none}</style></noscript>
 </head>
@@ -212,13 +220,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <ul class="nav-links">
-        <li><a href="#work">Customer work</a></li>
-        <li><a href="#engineering">Technical depth</a></li>
+        <li><a href="#work">Customer success work</a></li>
+        <li><a href="/">Engineering work</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a class="btn btn-outline" href="/devops/">DevOps work</a>
         <a class="btn btn-coral" href="https://www.linkedin.com/in/ikechukwu-elizabeth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </nav>
@@ -231,8 +238,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
     <div class="hero-inner">
       <div class="hero-copy">
         <h1 id="hero-title">I catch the drop-off between onboarding and renewal, before it becomes churn.</h1>
-        <p class="lead">Customer success and technical account management, from someone who builds the product. Eight years with customers in hospitality, retail and consumer electronics, now a DevOps and cloud engineer.</p>
-        <p class="eng-line">My case study runs in PulseOps, a live product I built on AWS. <a class="text-link" href="#engineering">See the technical side</a></p>
+        <p class="lead">Customer success and technical account management, from someone who builds the product. 8 years with customers in hospitality, retail and consumer electronics, now a DevOps and cloud engineer.</p>
+        <p class="eng-line">The platform these accounts run on is one I built and operate, so an escalation reaches engineering with the detail they need. <a class="text-link" href="/">See the engineering work</a></p>
       </div>
       <div class="hero-side">
       <div class="who">
@@ -245,34 +252,10 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
       </div>
       <nav class="chooser compact" aria-label="What I handle">
         <p class="chooser-title">What I handle for a customer book</p>
-        <a href="#onboarding">
-          <span>
-            <strong>Onboarding to first value</strong>
-            <span class="sub">A success target agreed at kickoff, proven on day 3</span>
-          </span>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#health">
-          <span>
-            <strong>Health scoring and churn risk</strong>
-            <span class="sub">8 accounts scored, the quiet one flagged early</span>
-          </span>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#escalation">
-          <span>
-            <strong>Escalations and recovery</strong>
-            <span class="sub">A Red account kept at the table after our own outage</span>
-          </span>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#renewal">
-          <span>
-            <strong>Renewals, QBRs and expansion</strong>
-            <span class="sub">A review 90 days out and a $65,000 upgrade case</span>
-          </span>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        </a>
+        <a href="#onboarding"><span><strong>Onboarding to first value</strong><span class="sub">A success target agreed at kickoff, proven on day 3</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#health"><span><strong>Health scoring and churn risk</strong><span class="sub">8 accounts scored, the quiet one flagged early</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#escalation"><span><strong>Escalations and recovery</strong><span class="sub">A Red account kept at the table after our own outage</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#renewal"><span><strong>Renewals, QBRs and expansion</strong><span class="sub">A review 90 days out and a $65,000 upgrade case</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
       </nav>
       </div>
     </div>
@@ -282,94 +265,56 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
     <div class="wrap">
       <div class="split section-head">
         <h2 id="work-title">One customer book, run from kickoff to renewal</h2>
-        <p>Eight accounts managed in HubSpot for PulseOps, a product I built and run. Each piece links to its full write-up.</p>
+        <div>
+          <p>8 accounts managed in HubSpot for PulseOps, a product I built and run.</p>
+          <p class="meta">The 8 customer companies are modelled. PulseOps is live, and the HubSpot records, health score outputs, incident timestamps and postmortems are real artifacts from working the book in it.</p>
+        </div>
       </div>
-      <ul class="rows">
 
-        <li class="row" id="onboarding">
-          <div>
-            <h3>A success target agreed at kickoff, proven on day 3</h3>
-            <p class="meta">Onboarding and time to value</p>
-          </div>
-          <div>
-            <p>Marlow Commerce is a two-person team. Their founding engineer, the account's champion and only stakeholder, agreed one measurable target with me at kickoff: acknowledge every incident in under 15 minutes.</p>
-            <p>On day 3 she declared their first incident in PulseOps to test the workflow, a checkout API returning 500 errors under a traffic spike. Acknowledged in 8 minutes, resolved in 10, inside the target, and the postmortem was published.</p>
-            <p>The fix on the day was a rollback and a scale-up. The postmortem's action item was autoscaling, so the next traffic spike doesn't cause the same failure.</p>
-            <figure class="shot-real"><a href="/assets/pulseops-inc1-timeline.png" target="_blank" rel="noopener" aria-label="Open the incident timeline at full size"><img src="/assets/pulseops-inc1-timeline.png" alt="PulseOps incident timeline for Marlow Commerce's first incident, acknowledged in 8 minutes and resolved in 10" width="1408" height="483" loading="lazy"></a><figcaption>The incident timeline in PulseOps, with the platform's own timestamps. Select it to see it full size.</figcaption></figure>
-            <div class="links">
-              <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c080da822aefa310c99e61" target="_blank" rel="noopener noreferrer">Onboarding playbook</a>
-            </div>
-          </div>
-        </li>
+      <article class="proj" id="onboarding">
+        <h3>A success target agreed at kickoff, proven on day 3</h3>
+        <p class="meta">Onboarding and time to value</p>
+        <p>Marlow Commerce is a 2-person team. Their founding engineer, the account's champion and only stakeholder, agreed one measurable target with me at kickoff: acknowledge every incident in under 15 minutes.</p>
+        <p>On day 3 she declared their first incident to test the workflow, a checkout API returning 500s under a traffic spike. Acknowledged in 8 minutes, resolved in 10, inside the target, and the postmortem published. The fix on the day was a rollback and a scale-up, with autoscaling logged as the postmortem's action item.</p>
+        <figure class="shot-real"><a href="/assets/pulseops-inc1-timeline.png" target="_blank" rel="noopener"><img src="/assets/pulseops-inc1-timeline.png" alt="PulseOps incident timeline acknowledged in 8 minutes and resolved in 10" width="1408" height="483" loading="lazy"></a><figcaption>The incident timeline in PulseOps, with the platform's own timestamps.</figcaption></figure>
+        <div class="links"><a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c080da822aefa310c99e61" target="_blank" rel="noopener noreferrer">Onboarding playbook</a></div>
+      </article>
 
-        <li class="row" id="health">
-          <div>
-            <h3>Flagged the quiet account that never raised a ticket</h3>
-            <p class="meta">Health scoring and churn risk</p>
-          </div>
-          <div>
-            <p>I built a weighted health score and ran it across all 8 accounts: usage 45%, support 25%, relationship 20%, commercial 10%.</p>
-            <p>Brightpath SaaS came out Red at 36.25. The harder catch was Verdant Fintech. No tickets, no incidents, and a Yellow score driven by low logins and one contact who had stopped engaging. I reached out to that contact directly.</p>
-            <p>Sentiment is left out on purpose. There is no survey data, and a placeholder score would have been invented.</p>
-            <figure class="shot-real"><a href="/assets/health-score-table.png" target="_blank" rel="noopener" aria-label="Open the health score table at full size"><img src="/assets/health-score-table.png" alt="Health score table for all 8 accounts, with Brightpath SaaS Red at 36.25 and Verdant Fintech Yellow at 59.5" width="1207" height="530" loading="lazy"></a><figcaption>The health score applied to all 8 accounts. Weights: usage 45%, support 25%, relationship 20%, commercial 10%.</figcaption></figure>
-            <div class="links">
-              <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c08050956ede939f6ca6b7" target="_blank" rel="noopener noreferrer">Health score model</a>
-            </div>
-          </div>
-        </li>
+      <article class="proj" id="health">
+        <h3>Flagged the quiet account that never raised a ticket</h3>
+        <p class="meta">Health scoring and churn risk</p>
+        <p>I built a weighted health score and ran it across all 8 accounts: usage 45%, support 25%, relationship 20%, commercial 10%.</p>
+        <p>Brightpath SaaS came out Red at 36.25. The harder catch was Verdant Fintech: no tickets, no incidents, and a Yellow score driven by low logins and one contact who had stopped engaging. I reached out to that contact directly. Sentiment is left out on purpose, because there is no survey data and a placeholder score would have been invented.</p>
+        <figure class="shot-real"><a href="/assets/health-score-table.png" target="_blank" rel="noopener"><img src="/assets/health-score-table.png" alt="Health score table for all 8 accounts" width="1207" height="530" loading="lazy"></a><figcaption>The score applied to all 8 accounts, with its weights.</figcaption></figure>
+        <div class="links"><a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c08050956ede939f6ca6b7" target="_blank" rel="noopener noreferrer">Health score model</a></div>
+      </article>
 
-        <li class="row" id="escalation">
-          <div>
-            <h3>Kept a Red account at the table after our own outage</h3>
-            <p class="meta">Escalations and incident communication</p>
-          </div>
-          <div>
-            <p>In this scenario, PulseOps ran with elevated errors and delayed notifications for just over an hour, while Brightpath SaaS's on-call team was mid-incident on their own systems and relying on it.</p>
-            <p>I reached out to their engineering manager 15 minutes in and had the root cause to her at the one hour mark. The postmortem came three days later, a day past the 48 hours I had promised.</p>
-            <p>The same day it went out, I asked for a call instead of leaving it at a document. I opened by saying it plainly: this happened when her team needed us most, and that's on us. I offered a $1,500 service credit, about two weeks of contract value, and a working session with their whole on-call team.</p>
-            <p>Three of their engineers came, the first time anyone besides the manager had spoken to us. By September 19 the relationship was wider, but usage hadn't moved and the health score was still Red at 36.25. The session built awareness. It hasn't rebuilt the habit.</p>
-            <p>Renewal is October 22 and still open. The risk is renewing at full price on a plan they use a fraction of, so I decided against offering a discount.</p>
-            <figure class="shot-real"><a href="/assets/brightpath-notes.png" target="_blank" rel="noopener" aria-label="Open the Brightpath notes at full size"><img src="/assets/brightpath-notes.png" alt="HubSpot notes on the Brightpath SaaS account: the postmortem follow-up on August 29 and the call on August 30" width="750" height="514" loading="lazy"></a><figcaption>The Brightpath SaaS account in HubSpot: the postmortem follow-up and the call that came out of it.</figcaption></figure>
-            <div class="links">
-              <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c080b1ad46d4edd1d24738" target="_blank" rel="noopener noreferrer">Incident and escalation</a>
-            </div>
-          </div>
-        </li>
+      <article class="proj" id="escalation">
+        <h3>Kept a Red account at the table after our own outage</h3>
+        <p class="meta">Escalations and incident communication</p>
+        <p>PulseOps ran with elevated errors for just over an hour while Brightpath SaaS's on-call team was mid-incident on their own systems and relying on it.</p>
+        <p>I reached their engineering manager 15 minutes in and had the root cause to her at the hour mark. The postmortem came 3 days later, a day past the 48 hours I had promised. The same day it went out I asked for a call rather than leaving it at a document, and opened by saying it plainly: this happened when her team needed us most, and that is on us. Then a $1,500 service credit, about 2 weeks of contract value, and a working session with their whole on-call team.</p>
+        <p>3 of their engineers came, the first time anyone besides the manager had spoken to us. By the 3-week check-in the relationship was wider, usage had not moved, and the health score was still Red at 36.25. The session built awareness. It has not rebuilt the habit.</p>
+        <p>Renewal is October 22 and still open. The risk is renewing at full price on a plan they use a fraction of, so I decided against offering a discount.</p>
+        <figure class="shot-real"><a href="/assets/brightpath-notes.png" target="_blank" rel="noopener"><img src="/assets/brightpath-notes.png" alt="HubSpot notes on the Brightpath SaaS account" width="750" height="514" loading="lazy"></a><figcaption>The postmortem follow-up and the call that came out of it.</figcaption></figure>
+        <div class="links"><a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c080b1ad46d4edd1d24738" target="_blank" rel="noopener noreferrer">Incident and escalation</a></div>
+      </article>
 
-        <li class="row" id="renewal">
-          <div>
-            <h3>Ran the renewal review 90 days out on the largest account</h3>
-            <p class="meta">Renewals and quarterly business reviews</p>
-          </div>
-          <div>
-            <p>Vantra Pay is the biggest account in the book at $150,000. I ran their quarterly business review 90 days before renewal, not the week before.</p>
-            <p>Their COO asked for an auditor-friendly export of postmortems. The product doesn't have one, so I logged it as product feedback and did not promise a date.</p>
-            <div class="links">
-              <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c08088abb0cd268f39c852" target="_blank" rel="noopener noreferrer">Quarterly business review</a>
-            </div>
-          </div>
-        </li>
+      <article class="proj" id="renewal">
+        <h3>Ran the renewal review 90 days out, and built the case for a $65,000 upgrade</h3>
+        <p class="meta">Renewals, quarterly business reviews and expansion</p>
+        <p>Vantra Pay is the biggest account in the book. I ran their quarterly business review 90 days before renewal, not the week before. Their COO asked for an auditor-friendly export of postmortems, which the product does not have, so I logged it as product feedback and did not promise a date.</p>
+        <p>Solace Dev Tools grew from 8 to 25 engineers and was hitting its incident limit most months. I raised the upgrade during a clean, incident-free quarter, so it landed as planning ahead rather than a pitch in the middle of a problem. Their Head of Platform got it first for a technical read, then their CTO with his input attached. The deal is in HubSpot at $65,000, with a target close of October 15.</p>
+        <figure class="shot-real"><a href="/assets/solace-deal.png" target="_blank" rel="noopener"><img src="/assets/solace-deal.png" alt="HubSpot deal record for the Solace Dev Tools plan upgrade" width="1134" height="532" loading="lazy"></a><figcaption>The upgrade deal in HubSpot, with the pitch note behind it.</figcaption></figure>
+        <div class="links">
+          <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c08088abb0cd268f39c852" target="_blank" rel="noopener noreferrer">Quarterly business review</a>
+          <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c080db930be2243a10eb1a" target="_blank" rel="noopener noreferrer">Expansion deal</a>
+        </div>
+      </article>
 
-        <li class="row" id="expansion">
-          <div>
-            <h3>Built a $65,000 upgrade case for a customer outgrowing its plan</h3>
-            <p class="meta">Expansion and stakeholder alignment</p>
-          </div>
-          <div>
-            <p>Solace Dev Tools grew from 8 to 25 engineers and was hitting its incident limit most months.</p>
-            <p>I raised the upgrade during a clean, incident-free quarter, so it landed as planning ahead rather than a pitch in the middle of a problem. Their Head of Platform got it first for a technical read, then their CTO with his input attached. The deal is in HubSpot at $65,000, with a target close of October 15.</p>
-            <figure class="shot-real"><a href="/assets/solace-deal.png" target="_blank" rel="noopener" aria-label="Open the Solace Dev Tools deal at full size"><img src="/assets/solace-deal.png" alt="HubSpot deal record for the Solace Dev Tools plan upgrade: $65,000, close date October 15, 2026, stage Qualified To Buy, with the pitch note" width="1134" height="532" loading="lazy"></a><figcaption>The upgrade deal in HubSpot, with the pitch note that went to their Head of Platform first.</figcaption></figure>
-            <div class="links">
-              <a class="text-link" href="https://material-caper-b63.notion.site/3c9d930ef5c080db930be2243a10eb1a" target="_blank" rel="noopener noreferrer">Expansion deal</a>
-            </div>
-          </div>
-        </li>
-
-      </ul>
-      <p class="provenance">About this case study: the eight customer companies, their contacts and their incidents are modelled, including a modelled book worth $452,000 in ARR. PulseOps is a live product I built and run, and the HubSpot records, health score outputs and postmortems are real artifacts from working the book in it.</p>
       <div class="button-row">
         <a class="btn btn-teal" href="https://tinyurl.com/elizabeth-tam-csm" target="_blank" rel="noopener noreferrer">Read the full case study</a>
-        <a class="btn btn-outline-teal" href="/assets/Elizabeth-Ikechukwu-CS-Resume.pdf" target="_blank" rel="noopener">Resume: customer success</a>
+        <a class="btn btn-outline-teal" href="/assets/Elizabeth-Ikechukwu-CS-Resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </div>
   </section>
@@ -379,13 +324,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
       <div class="split">
         <h2 id="eng-title">I read the logs before I escalate.</h2>
         <div class="stack">
-          <p>PulseOps is mine end to end: database schema, application, Terraform infrastructure on AWS, and a GitHub Actions pipeline with no stored credentials. 29 automated tests run on every push.</p>
-          <p>In a four-incident simulation on a live EC2 server, Datadog caught each problem within 1 to 11 minutes and all four were fixed within SLA. While fixing one, I found the disk alert was watching the wrong disk.</p>
-          <p>I work in AWS, Kubernetes, Terraform, CI/CD and Linux, and I'm preparing for the CKA exam.</p>
-          <div class="links">
-            <a class="text-link" href="/devops/">See the engineering work</a>
-            <a class="text-link" href="https://github.com/elizabeth-ikechukwu" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
+          <p>PulseOps is mine end to end: database schema, application, Terraform infrastructure on AWS, and a pipeline with no stored credentials. 29 automated tests run on every push.</p>
+          <p>In a 4-incident drill on a live server, Datadog caught each problem within 1 to 11 minutes and every one was fixed inside its SLA. While fixing one, I found the alert was watching the wrong disk.</p>
+          <div class="links"><a class="text-link" href="/">See the engineering work</a></div>
         </div>
       </div>
     </div>
@@ -394,60 +335,43 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
   <section id="experience" class="section light" aria-labelledby="exp-title">
     <div class="wrap">
       <div class="split section-head">
-        <h2 id="exp-title">Eight years with customers, then I learned to build.</h2>
-        <p>Customer-facing since 2017, technical since 2025. Newest first.</p>
+        <h2 id="exp-title">8 years with customers, then I learned to build.</h2>
+        <p>Newest first.</p>
       </div>
       <ul class="rows">
         <li class="row">
+          <div><h3>Customer Success Portfolio</h3>
+          <p class="meta">PulseOps account book, HubSpot. Self-directed. August 2026 to present.</p></div>
+          <div><p>Run the 8-account book above, from onboarding through health scoring, escalation and renewal planning to expansion. Full write-up above.</p></div>
+        </li>
+        <li class="row">
+          <div><h3>DevOps Engineer and Dev Team Lead</h3>
+          <p class="meta">ScaleUpBuild - HelloAgain. Volunteer, remote. July 2026 to present.</p></div>
+          <div><p>Lead the dev team and take architecture trade-offs to leadership before anything is built, covering the real-time layer, multi-tenant isolation and data residency, so decisions are settled before spend.</p></div>
+        </li>
+        <li class="row">
+          <div><h3>Co-Trainer and DevOps Engineer</h3>
+          <p class="meta">Digital Witch Support Community. Part-time, remote. January 2025 to present.</p></div>
           <div>
-            <h3>Co-Trainer and DevOps Engineer</h3>
-            <p class="meta">Digital Witch Support Community, remote, part-time. January 2025 to present.</p>
-          </div>
-          <div>
-            <p>Teach live AWS and Azure sessions for cohort trainees heading into DevOps and cloud roles, and coach them through unfamiliar tools and errors step by step.</p>
-            <p>Built the community training platform's AWS infrastructure in Terraform across development, staging and production, with a pipeline that signs in through OIDC so no static credentials exist.</p>
-            <p>Tuned Datadog alerts across two servers to cut false positives while still catching real traffic drops within five minutes.</p>
+            <p>Teach live AWS and Azure sessions for cohort trainees and coach them through unfamiliar tools and errors step by step, which is the same skill a technical walkthrough with a customer calls for.</p>
+            <p>Built the community's training infrastructure on AWS and the alerting that watches it, tuning thresholds so a real traffic drop is caught within 5 minutes without waking anyone for noise.</p>
           </div>
         </li>
         <li class="row">
+          <div><h3>Customer Service Representative</h3>
+          <p class="meta">Various roles, Nigeria. 2017 to 2024.</p></div>
           <div>
-            <h3>DevOps Engineer and Dev Team Lead (Volunteer)</h3>
-            <p class="meta">ScaleUpBuild - HelloAgain, remote. July 2026 to present.</p>
-          </div>
-          <div>
-            <p>Put the platform's architecture trade-offs in front of leadership before anything was provisioned, covering real-time data, multi-tenant isolation and data residency, so decisions were settled before spend and rework.</p>
-            <p>Lead the dev team building its AWS infrastructure for an AI-powered WhatsApp commerce product.</p>
+            <p>8 years resolving customer issues end to end across hospitality, retail and consumer electronics, in person and through WhatsApp, Facebook and Jumia online orders.</p>
+            <p>Set up and troubleshot customer devices, worked out whether a fault sat with the customer or the manufacturer, and escalated to the right company with the detail they needed to act. Kept several open complaints moving at once and followed each through until it closed.</p>
           </div>
         </li>
         <li class="row">
-          <div>
-            <h3>Infrastructure Engineer and Team Lead</h3>
-            <p class="meta">Fintech Bank Platform, Digital Witch Pod 13. April to May 2026.</p>
-          </div>
-          <div>
-            <p>Led infrastructure for a team-built fintech platform: 45 AWS resources through Terraform with zero manual changes, and every release shipped through ArgoCD with one-command rollback.</p>
-          </div>
-        </li>
-        <li class="row">
-          <div>
-            <h3>Customer Service Representative</h3>
-            <p class="meta">Hospitality, retail and consumer electronics, Nigeria. 2017 to 2024.</p>
-          </div>
-          <div>
-            <p>Handled customers from first contact to resolution for eight years, in person and through WhatsApp, Facebook and Jumia online orders.</p>
-            <p>Set up and troubleshot customer phones, worked out whether a fault was the customer's or the manufacturer's, and escalated to the right company with the details they needed to act.</p>
-            <p>Kept several open complaints moving at once and followed each one up until it was closed.</p>
-          </div>
-        </li>
-        <li class="row">
-          <div>
-            <h3>Training and certifications</h3>
-          </div>
+          <div><h3>Education and certifications</h3></div>
           <div class="tight">
-            <p>Customer Success and Technical Account Management training, Digital Witch Support Community, since August 2026.</p>
-            <p>BSc Cybersecurity, Miva Open University, expected January 2030.</p>
+            <p>Customer Success and Technical Account Management training, Digital Witch Support Community, in progress since August 2026.</p>
+            <p>CKA (Certified Kubernetes Administrator), in progress.</p>
             <p>DevOps and Cloud Security Certification, Digital Witch Support Community, June 2026.</p>
-            <p>CKA in progress, expected October 2026.</p>
+            <p>BSc Cybersecurity, Miva Open University, Abuja.</p>
             <p>Technical Support Fundamentals, Google, November 2025.</p>
           </div>
         </li>
@@ -464,7 +388,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
           <div class="actions">
             <a class="btn btn-coral" href="mailto:elizabethikechukwu381@gmail.com">Email</a>
             <a class="btn btn-outline" href="https://www.linkedin.com/in/ikechukwu-elizabeth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="btn btn-outline" href="/assets/Elizabeth-Ikechukwu-CS-Resume.pdf" target="_blank" rel="noopener">Resume: customer success</a>
+            <a class="btn btn-outline" href="/assets/Elizabeth-Ikechukwu-CS-Resume.pdf" target="_blank" rel="noopener">Resume</a>
           </div>
         </div>
       </div>
