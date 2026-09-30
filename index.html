@@ -206,8 +206,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
 .proj{border-top:1px solid var(--rule);padding:2.6rem 0 0;margin-top:2.6rem}
 .proj:first-of-type{border-top:0;margin-top:0;padding-top:0}
 .proj h3{font-size:clamp(1.5rem,1.1rem + 1.1vw,2.05rem);line-height:1.15;letter-spacing:-.01em;max-width:20em}
-.proj > p{max-width:42em;font-size:1.0625rem;line-height:1.62;margin-top:1rem}
-.proj .meta{margin-top:.5rem}
+.proj > p{max-width:42em;line-height:1.62;margin-top:1rem}
+.proj .meta{margin-top:.5rem;font-size:1.0625rem;line-height:1.4;color:var(--soft)}
 .proj .links{margin-top:1.6rem}
 .proj .shot-real{max-width:52em;margin:1.8rem 0}
 .proj code{font-size:.94em;background:rgba(26,82,117,.08);padding:.1em .35em;border-radius:4px}
@@ -256,12 +256,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
         <a class="text-link" href="mailto:elizabethikechukwu381@gmail.com">elizabethikechukwu381@gmail.com</a>
       </div>
       <nav class="chooser compact" aria-label="Projects">
-        <p class="chooser-title">5 systems I built and ran</p>
-        <a href="#taskflow"><span><strong>TaskFlow</strong><span class="sub">Deployed only by its pipeline</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
-        <a href="#pulseops"><span><strong>PulseOps</strong><span class="sub">Every resolved incident writes its own postmortem</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
-        <a href="#fintech"><span><strong>Banking platform</strong><span class="sub">The infrastructure 3 teams deployed onto</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <p class="chooser-title">What I build and run</p>
+        <a href="#taskflow"><span><strong>Kubernetes and GitOps delivery</strong><span class="sub">TaskFlow: 6 gates, deployed only by its pipeline</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#pulseops"><span><strong>Multi-tenant isolation</strong><span class="sub">PulseOps: proven by a test, not assumed</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#fintech"><span><strong>Infrastructure as code at team scale</strong><span class="sub">45 AWS resources for a 23-engineer build</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
         <a href="#incidents"><span><strong>Monitoring and incident response</strong><span class="sub">4 outages caught and fixed inside SLA</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
-        <a href="#inference"><span><strong>Distributed inference</strong><span class="sub">A language model across 3 machines</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <a href="#inference"><span><strong>Private network architecture</strong><span class="sub">A model across 3 machines, 1 public entry point</span></span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
       </nav>
       </div>
     </div>
@@ -269,7 +269,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
 
   <section id="work" class="section light" aria-labelledby="work-title">
     <div class="wrap">
-      <div class="split section-head">
+      <div class="section-head">
         <h2 id="work-title">Projects</h2>
         <p>Each one links to its code. The diagrams are drawn from the Terraform in those repositories.</p>
       </div>
