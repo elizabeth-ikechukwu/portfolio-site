@@ -90,7 +90,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
 /* Header */
 .site-header{position:sticky;top:0;z-index:50;background:var(--teal);color:var(--cream);--focus:var(--cream)}
 .header-inner{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter);height:var(--header);display:flex;align-items:center}
-.wordmark{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;color:var(--cream);text-decoration:none}
+.wordmark{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;color:var(--cream);text-decoration:none;white-space:nowrap}
 .menu-btn{
   margin-left:auto;min-height:44px;padding:.5rem 1.1rem;
   background:transparent;color:var(--cream);border:2px solid var(--cream);border-radius:4px;
@@ -101,7 +101,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
 .nav-links{list-style:none;margin:0;padding:0}
 .nav-links a{display:block;padding:1rem 0;font-size:1.5rem;font-weight:700;color:var(--cream);text-decoration:none;border-bottom:1px solid rgba(250,246,239,.22)}
 .nav-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
-@media (min-width:1180px){
+@media (min-width:1280px){
   .menu-btn{display:none}
   .site-nav,.site-nav.open{display:flex;position:static;flex:1;align-items:center;justify-content:space-between;padding:0;background:none;box-shadow:none}
   .nav-links{display:flex;gap:2rem;margin-left:2.5rem}
@@ -193,7 +193,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
 .stack p{max-width:36em;color:var(--soft)}
 .stack p:first-child{color:var(--text)}
 .hero h1{font-size:clamp(2.25rem,1.5rem + 2.8vw,3.75rem)}
-@media (min-width:1180px){.nav-links{gap:1.6rem;margin-left:2rem}.nav-links a{white-space:nowrap}.nav-actions{flex-wrap:nowrap}.nav-actions .btn{white-space:nowrap}}
+@media (min-width:1280px){.nav-links{gap:1.6rem;margin-left:2rem}.nav-links a{white-space:nowrap}.nav-actions{flex-wrap:nowrap}.nav-actions .btn{white-space:nowrap}}
 .shot-real{margin:1.6rem 0 0;max-width:40em}
 .shot-real img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:8px;background:#fff}
 .shot-real figcaption{margin-top:.6rem;font-size:1rem;line-height:1.45;color:var(--soft)}
@@ -227,8 +227,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--focus,var(--teal));
         <li><a href="/customer-success/">Customer success</a></li>
         <li><a href="#stack">Stack</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        </ul>
       <div class="nav-actions">
         <a class="btn btn-outline" href="https://github.com/elizabeth-ikechukwu" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn btn-coral" href="https://www.linkedin.com/in/ikechukwu-elizabeth" target="_blank" rel="noopener noreferrer">LinkedIn</a>
